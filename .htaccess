@@ -1,3 +1,5 @@
+LoadModule rewrite_module modules/mod_rewrite.so
+
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://arjo.me/$1 [R,L]
