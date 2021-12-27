@@ -1,4 +1,5 @@
-const i_am_designer = document.getElementById('i-am-designer');
+function refresh(){
+    const i_am_designer = document.getElementById('i-am-designer');
 const i_am_developer = document.getElementById('i-am-developer');
 const i_am_diagrammer = document.getElementById('i-am-diagrammer');
 
@@ -11,7 +12,9 @@ i_am_developer.addEventListener('click', () => {
 i_am_diagrammer.addEventListener('click', () => {
     alert('I am a diagrammer');
 });
+}
 
+refresh();
 
 const top_container_default = `<div>
 <h1>Meet Tridib Roy Arjo</h1>
@@ -43,7 +46,7 @@ function toggle_designer_modal(){
     replace(e, parse(top_container_default));
         isEnableDesignerModal = false;
     }
-    
+    refresh();
 }
 
 function parse(html){
